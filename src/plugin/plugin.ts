@@ -30,7 +30,7 @@ export class EthcodePlugin extends PluginClient {
   }
   async exec() {
     try {
-      this.call('vscodeExtAPI', 'exec', 'ethential.ethcode', 'loadCompiled', [this.compiled]);
+      this.call('vscodeExtAPI', 'executeCommand', 'ethential.ethcode', 'loadCompiled', [this.compiled]);
     } catch (error) {
       console.error(error);
     }

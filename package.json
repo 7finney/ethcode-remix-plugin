@@ -3,9 +3,9 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@remixproject/plugin": "/home/0mkar/Karma/remix-plugin/dist/packages/plugin/core/",
-    "@remixproject/plugin-vscode": "/home/0mkar/Karma/remix-plugin/dist/packages/plugin/vscode/",
-    "@remixproject/plugin-webview": "/home/0mkar/Karma/remix-plugin/dist/packages/plugin/webview",
+    "@remixproject/plugin": "^0.3.13-alpha.1",
+    "@remixproject/plugin-vscode": "^0.3.13-alpha.1",
+    "@remixproject/plugin-webview": "^0.3.13-alpha.1",
     "@testing-library/jest-dom": "^5.11.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^12.1.10",

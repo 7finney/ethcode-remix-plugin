@@ -1437,60 +1437,46 @@
     schema-utils "^2.6.5"
     source-map "^0.7.3"
 
-"@remixproject/plugin-api@0.3.8", "@remixproject/plugin-api@file:../remix-plugin/dist/packages/api":
-  version "0.3.8"
+"@remixproject/plugin-api@0.3.13-alpha.1":
+  version "0.3.13-alpha.1"
+  resolved "https://registry.yarnpkg.com/@remixproject/plugin-api/-/plugin-api-0.3.13-alpha.1.tgz#cbba1d0b65f61a7270a93d37b955754a6707ecef"
+  integrity sha512-jkFAPVqQJ6ORdAKgzTp+ddhqvuxIe4feAsnsfelUDi3djG69mjvvwzhhLhcNVJa+j4HhZH+uW6xiTlxWe7QQQQ==
   dependencies:
-    "@remixproject/plugin-utils" "0.3.8"
+    "@remixproject/plugin-utils" "0.3.13-alpha.1"
 
-"@remixproject/plugin-utils@0.3.8":
-  version "0.3.8"
-  resolved "https://registry.yarnpkg.com/@remixproject/plugin-utils/-/plugin-utils-0.3.8.tgz#e24d27f3580fa2533adadc0b0925dbe85804ea27"
-  integrity sha512-tI7PNHCwkoF2LzmZlQy1Lw0T/f05dURR+pjH+usqUAnyoVRgtgOvbHq18HLSyZN9xz6E1YNotuE4DFT2VJTZ2A==
+"@remixproject/plugin-utils@0.3.13-alpha.1":
+  version "0.3.13-alpha.1"
+  resolved "https://registry.yarnpkg.com/@remixproject/plugin-utils/-/plugin-utils-0.3.13-alpha.1.tgz#fc191a79154eb9fca8698132c542d2d4b0c5e238"
+  integrity sha512-/UcVZNIoxIxyM9N7hcL121ahKa2mD6kS2ilFrXutGzV/7qBNjjtAm6aaqRJQANA0e3YVmtb8YZo5NUM5CNpxCg==
   dependencies:
     tslib "2.0.1"
 
-"@remixproject/plugin-vscode@/home/0mkar/Karma/remix-plugin/dist/packages/plugin/vscode/":
-  version "0.3.8"
+"@remixproject/plugin-vscode@^0.3.13-alpha.1":
+  version "0.3.13-alpha.1"
+  resolved "https://registry.yarnpkg.com/@remixproject/plugin-vscode/-/plugin-vscode-0.3.13-alpha.1.tgz#807e5f2af3c05e12d06039cacc9f62f14d4c4309"
+  integrity sha512-k+WQ9/NkSJYhus09dzb3ddk/Boyt0yEcWEwfz2XAV9L2ajr86CDzMA8bTlgPOxmvU4JhbPB6pSeJ8uFEKJKs/Q==
   dependencies:
-    "@remixproject/plugin" "0.3.8"
-    "@remixproject/plugin-api" "0.3.8"
-    "@remixproject/plugin-utils" "0.3.8"
+    "@remixproject/plugin" "0.3.13-alpha.1"
+    "@remixproject/plugin-api" "0.3.13-alpha.1"
+    "@remixproject/plugin-utils" "0.3.13-alpha.1"
 
-"@remixproject/plugin-vscode@file:../remix-plugin/dist/packages/plugin/vscode":
-  version "0.3.8"
+"@remixproject/plugin-webview@^0.3.13-alpha.1":
+  version "0.3.13-alpha.1"
+  resolved "https://registry.yarnpkg.com/@remixproject/plugin-webview/-/plugin-webview-0.3.13-alpha.1.tgz#4404676fb4910dd7846470f5c7b93bb9bafb1d06"
+  integrity sha512-8xSKoyoTT6Pf0zPp5WoUwsU1+f02SBIaWftdfCxbqGAtWq/42BBKFQCiN4Vc/EvqkTx9UcrvxbjOIMm5Yf5IPA==
   dependencies:
-    "@remixproject/plugin" "0.3.8"
-    "@remixproject/plugin-api" "0.3.8"
-    "@remixproject/plugin-utils" "0.3.8"
-
-"@remixproject/plugin-webview@/home/0mkar/Karma/remix-plugin/dist/packages/plugin/webview":
-  version "0.3.8"
-  dependencies:
-    "@remixproject/plugin" "0.3.8"
-    "@remixproject/plugin-api" "0.3.8"
-    "@remixproject/plugin-utils" "0.3.8"
+    "@remixproject/plugin" "0.3.13-alpha.1"
+    "@remixproject/plugin-api" "0.3.13-alpha.1"
+    "@remixproject/plugin-utils" "0.3.13-alpha.1"
     axios "^0.21.1"
 
-"@remixproject/plugin-webview@file:../remix-plugin/dist/packages/plugin/webview":
-  version "0.3.8"
+"@remixproject/plugin@0.3.13-alpha.1", "@remixproject/plugin@^0.3.13-alpha.1":
+  version "0.3.13-alpha.1"
+  resolved "https://registry.yarnpkg.com/@remixproject/plugin/-/plugin-0.3.13-alpha.1.tgz#4c5102a931ec8e41b4cf45b3012e4e658cc9ed74"
+  integrity sha512-agXE0TMcvtAnmmaBBfuCsfFXcBUTdcoCEkLRhSyrcqi6nwK+UIggiSr39ImDNBI2tgvkHPcDNAOjBI42uoMcsg==
   dependencies:
-    "@remixproject/plugin" "0.3.8"
-    "@remixproject/plugin-api" "0.3.8"
-    "@remixproject/plugin-utils" "0.3.8"
-    axios "^0.21.1"
-
-"@remixproject/plugin@/home/0mkar/Karma/remix-plugin/dist/packages/plugin/core/":
-  version "0.3.8"
-  dependencies:
-    "@remixproject/plugin-api" "file:../remix-plugin/dist/packages/api"
-    "@remixproject/plugin-utils" "0.3.8"
-    events "3.2.0"
-
-"@remixproject/plugin@0.3.8", "@remixproject/plugin@file:../remix-plugin/dist/packages/plugin/core":
-  version "0.3.8"
-  dependencies:
-    "@remixproject/plugin-api" "file:../remix-plugin/dist/packages/api"
-    "@remixproject/plugin-utils" "0.3.8"
+    "@remixproject/plugin-api" "0.3.13-alpha.1"
+    "@remixproject/plugin-utils" "0.3.13-alpha.1"
     events "3.2.0"
 
 "@rollup/plugin-node-resolve@^7.1.1":
