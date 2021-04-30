@@ -14,10 +14,6 @@ export const useEthcodePlugin = (client: EthcodePlugin): Array<EthcodePlugin | a
           data
         };
         if (compiled !== res) {
-          console.log('compiled !== res');
-          console.log(compiled !== res);
-          console.log(JSON.stringify(compiled));
-          console.log(JSON.stringify(res));
           setCompiled({
             target,
             source,
