@@ -6,7 +6,7 @@ export const useEthcodePlugin = (client: EthcodePlugin): Array<EthcodePlugin | a
   useEffect(() => {
     client.onload(() => {
       client.on('solidity', 'compilationFinished', (target: any, source: any, version: any, data: any) => {
-        console.log("compilation finished in hooks");
+        console.log("Success! Compilation finished.");
         const res = {
           target,
           source,
