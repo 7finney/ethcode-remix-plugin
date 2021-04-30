@@ -2,35 +2,22 @@ import { PluginClient } from '@remixproject/plugin';
 import { createClient } from '@remixproject/plugin-webview';
 
 export class EthcodePlugin extends PluginClient {
-  callBackEnabled: boolean = true;
-  compiled: any = {};
+  callBackEnabled: boolean = false;
   constructor() {
     super();
     createClient(this);
     this.methods = ["exec"];
     this.onload()
       .then(async () => {
-        console.log('Ethcode plugin loaded....');
-        await this.setCallBacks();
+        console.log('Ethcode plugin loaded!');
       })
       .catch(async (e) => {
-        console.log("ERROR CONNECTING", e);
+        console.log("ERROR CONNECTING...", e);
       });
   }
-  async setCallBacks() {
-    this.on('solidity', 'compilationFinished', (target: any, source: any, version: any, data: any) => {
-      console.log("Success! compilation finished.");
-      this.compiled = {
-        target,
-        source,
-        version,
-        data
-      };
-    })
-  }
-  async exec() {
+  async exec(compiled: any) {
     try {
-      this.call('vscodeExtAPI', 'executeCommand', 'ethential.ethcode', 'loadCompiled', [this.compiled]);
+      this.call('vscodeExtAPI', 'executeCommand', 'ethential.ethcode', 'loadCompiled', [compiled]);
     } catch (error) {
       console.error(error);
     }
