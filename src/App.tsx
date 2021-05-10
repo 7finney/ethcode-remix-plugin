@@ -15,16 +15,30 @@ function App() {
   return (
     <div className="App">
       <header>
-        <h2>ETHcode</h2>
-        <p>This plugin is used to load compiled JSON (which matches the output JSON specification from solidity) into ETHcode extension.</p>
-        <p>ETHcode extension can deploy compiled JSON to Ethereum Test Networks and Main network.</p>
-      </header>
-      {compiled && Object.keys(compiled).length > 0 &&
-        <div className="compiledJSON">
-          <pre style={{ width: '90vw', height: '50vh', border: '1px solid #38ffAf' }}>{JSON.stringify(compiled, null, ' ')}</pre>
+        <div className="card">
+          <div className="card-header">
+            <h1 className="card-title text-center text-primary">ETHcode connector</h1>
+          </div>
+          <div className="card-body">
+            <p className="card-text">Use ethcode remix connector to load compiled JSON into ETHcode.</p>
+            <p className="card-text">ETHcode extension can deploy compiled JSON to Ethereum Test Networks and Main network.</p>
+          </div>
         </div>
-      }
-      <button onClick={handleDeploy}>Deploy on Ethcode</button>
+      </header>
+        <div className="card">
+          <div className="card-header">
+            Compilation result
+          </div>
+            {compiled && Object.keys(compiled).length > 0 &&
+              <div className="card-body">
+                <div className="compiledJSON">
+                  <pre style={{ width: '90vw', height: '50vh', border: '1px solid #38ffAf' }}>{JSON.stringify(compiled, null, ' ')}</pre>
+                </div>
+                <button className="btn btn-primary" onClick={handleDeploy}>Deploy on Ethcode</button>
+              </div>
+            }
+            {!compiled && <div className="card-body"><p className="card-text">Please compile a contract first.</p></div>}
+        </div>
     </div>
   );
 }
