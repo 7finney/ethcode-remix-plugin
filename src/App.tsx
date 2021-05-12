@@ -16,7 +16,8 @@ function App() {
     <div className="App">
       <header>
         <div className="card">
-          <div className="card-header">
+          <div className="card-header d-flex align-items-center justify-content-center">
+            <img alt="logo" src={process.env.PUBLIC_URL + '/logo.png'} className="img-fluid img-thumbnail rounded float-left header-image" />
             <h1 className="card-title text-center text-primary">ETHcode connector</h1>
           </div>
           <div className="card-body">
